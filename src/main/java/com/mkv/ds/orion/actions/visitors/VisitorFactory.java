@@ -24,10 +24,12 @@ public class VisitorFactory {
 
 		case CONSOLE:
 			visitor = getConsoleBackendHandler();
+			break;
 
 		case NEO4J:
 			visitor = getNeo4jBackendHandler(conf);
-
+			break;
+				
 		default:
 			break;
 		}
